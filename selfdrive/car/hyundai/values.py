@@ -144,7 +144,7 @@ class CAR(StrEnum):
   KIA_CEED = "KIA CEED INTRO ED 2019"
   KIA_EV6 = "KIA EV6 2022"
   KIA_CARNIVAL_4TH_GEN = "KIA CARNIVAL 4TH GEN"
-  KIA_CADENZA = "KIA CADENZA YG 2018"
+  KIA_CADENZA = "KIA CADENZA"
 
   # Genesis
   GENESIS_GV60_EV_1ST_GEN = "GENESIS GV60 ELECTRIC 1ST GEN"
@@ -247,7 +247,7 @@ CAR_INFO: Dict[str, Optional[Union[HyundaiCarInfo, List[HyundaiCarInfo]]]] = {
     HyundaiCarInfo("Kia Forte 2023", car_parts=CarParts.common([CarHarness.hyundai_e])),
   ],
   CAR.KIA_K5_2021: HyundaiCarInfo("Kia K5 2021-24", car_parts=CarParts.common([CarHarness.hyundai_a])),
-  CAR.KIA_CADENZA: HyundaiCarInfo("Kia Cadenza YG 2016-2019", "All", car_parts=CarParts.common([CarHarness.hyundai_c])),
+  CAR.KIA_CADENZA: HyundaiCarInfo("Kia Cadenza", "All", car_parts=CarParts.common([CarHarness.hyundai_c])),
   CAR.KIA_K5_HEV_2020: HyundaiCarInfo("Kia K5 Hybrid 2020-22", car_parts=CarParts.common([CarHarness.hyundai_a])),
   CAR.KIA_K8_HEV_1ST_GEN: HyundaiCarInfo("Kia K8 Hybrid (with HDA II) 2023", "Highway Driving Assist II", car_parts=CarParts.common([CarHarness.hyundai_q])),
   CAR.KIA_NIRO_EV: [
