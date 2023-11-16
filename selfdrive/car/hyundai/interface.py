@@ -197,6 +197,11 @@ class CarInterface(CarInterfaceBase):
       ret.wheelbase = 2.80
       ret.steerRatio = 13.75
       ret.tireStiffnessFactor = 0.5
+      elif candidate == CAR.KIA_CADENZA:
+      ret.mass = 1640.
+      ret.wheelbase = 2.885
+      ret.steerRatio = 14.4
+      ret.tireStiffnessFactor = 0.7
     elif candidate == CAR.KIA_CEED:
       ret.mass = 1450.
       ret.wheelbase = 2.65
