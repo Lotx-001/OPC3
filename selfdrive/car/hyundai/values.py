@@ -247,6 +247,7 @@ CAR_INFO: Dict[str, Optional[Union[HyundaiCarInfo, List[HyundaiCarInfo]]]] = {
     HyundaiCarInfo("Kia Forte 2023", car_parts=CarParts.common([CarHarness.hyundai_e])),
   ],
   CAR.KIA_K5_2021: HyundaiCarInfo("Kia K5 2021-24", car_parts=CarParts.common([CarHarness.hyundai_a])),
+  CAR.KIA_CADENZA: HyundaiCarInfo("Kia Cadenza YG 2016-2019", "All", car_parts=CarParts.common([CarHarness.hyundai_c])),
   CAR.KIA_K5_HEV_2020: HyundaiCarInfo("Kia K5 Hybrid 2020-22", car_parts=CarParts.common([CarHarness.hyundai_a])),
   CAR.KIA_K8_HEV_1ST_GEN: HyundaiCarInfo("Kia K8 Hybrid (with HDA II) 2023", "Highway Driving Assist II", car_parts=CarParts.common([CarHarness.hyundai_q])),
   CAR.KIA_NIRO_EV: [
@@ -285,7 +286,6 @@ CAR_INFO: Dict[str, Optional[Union[HyundaiCarInfo, List[HyundaiCarInfo]]]] = {
                                   car_parts=CarParts.common([CarHarness.hyundai_c])),
   CAR.KIA_STINGER_2022: HyundaiCarInfo("Kia Stinger 2022", "All", car_parts=CarParts.common([CarHarness.hyundai_k])),
   CAR.KIA_CEED: HyundaiCarInfo("Kia Ceed 2019", car_parts=CarParts.common([CarHarness.hyundai_e])),
-  CAR.KIA_CADENZA: HyundaiCarInfo("Kia Cadenza YG 2016-2019", "All", car_parts=CarParts.common([CarHarness.hyundai_c])),
   CAR.KIA_EV6: [
     HyundaiCarInfo("Kia EV6 (Southeast Asia only) 2022-23", "All", car_parts=CarParts.common([CarHarness.hyundai_p])),
     HyundaiCarInfo("Kia EV6 (without HDA II) 2022-23", "Highway Driving Assist", car_parts=CarParts.common([CarHarness.hyundai_l])),
