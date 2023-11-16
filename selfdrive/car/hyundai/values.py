@@ -903,26 +903,6 @@ FW_VERSIONS = {
       b'\xf1\x87LAHSGN012918KF10\x98\x88x\x87\x88\x88x\x87\x88\x88\x98\x88\x87w\x88w\x88\x88\x98\x886o\xf6\xff\x98w\x7f\xff3\x00\xf1\x816W3B1051\x00\x00\xf1\x006W351_C2\x00\x006W3B1051\x00\x00TLF0T20NL2H\r\xbdm',
       b'\xf1\x87LAJSG49645724HF0\x87x\x87\x88\x87www\x88\x99\xa8\x89\x88\x99\xa8\x89\x88\x99\xa8\x89S_\xfb\xff\x87f\x7f\xff^2\xf1\x816W3B1051\x00\x00\xf1\x006W351_C2\x00\x006W3B1051\x00\x00TLF0T20NL2H\r\xbdm',
     ],
-  CAR.KIA_CADENZA: { # (YG)
-    (Ecu.fwdCamera, 0x7c4, None): [
-      b'\xf1\x00YG MFC  1.00 1.01 95740F6100 170717',
-      b'\xf1\x00YG MFC  1.00 1.03 95740F6200 190605',
-    ],
-    (Ecu.fwdRadar, 0x7d0, None): [
-      b'\xf1\x00YG__ SCC F_CUP   1.01 1.01 96400F6000     \xf1\xa01.01',
-      b'\xf1\x00YG__ SCC F_CUP   1.01 1.02 96400F6000     \xf1\xa01.02',
-      b'\xf1\x00YG__ SCC F_CUP   1.00 1.01 99110F6000     \xf1\xa01.01',
-    ],
-    (Ecu.abs, 0x7d1, None): [
-      b'\xf1\x8758920-F6230\xf1\000NC MGH \t 101\031\t\005 58920F6230\xf1\xa01.01',
-    ],
-    (Ecu.eps, 0x7d4, None): [
-      b'\xf1\x00YG  MDPS C 1.00 1.00 99800F6563\x00 4YGAC100',
-      b'\xf1\x00YG  MDPS C 1.00 1.00 E0000F6563\x00 4YGSC100',
-      b'\xf1\x00YG  MDPS C 1.01 99500F6563\x00 4YGDC103',
-      b'\xf1\x00YG  MDPS C 1.00 1.01 56310F6350\x00 4YG7C101',
-      b'\xf1\x00YG  MDPS C 1.00 1.01 99600G8563\x00 41G8C101',
-    ], 
   },
   CAR.TUCSON: {
     (Ecu.fwdRadar, 0x7d0, None): [
@@ -1485,6 +1465,27 @@ FW_VERSIONS = {
       b'\xf1\x006V2B0_C2\x00\x006V2C6051\x00\x00CBD0N20NL1\x00\x00\x00\x00',
       b'\xf1\x816U2VC051\x00\x00\xf1\x006U2V0_C2\x00\x006U2VC051\x00\x00DBD0T16SS0\x00\x00\x00\x00',
       b"\xf1\x816U2VC051\x00\x00\xf1\x006U2V0_C2\x00\x006U2VC051\x00\x00DBD0T16SS0\xcf\x1e'\xc3",
+    ],
+    },
+    CAR.KIA_CADENZA: { # (YG)
+    (Ecu.fwdCamera, 0x7c4, None): [
+      b'\xf1\x00YG MFC  1.00 1.01 95740F6100 170717',
+      b'\xf1\x00YG MFC  1.00 1.03 95740F6200 190605',
+    ],
+    (Ecu.fwdRadar, 0x7d0, None): [
+      b'\xf1\x00YG__ SCC F_CUP   1.01 1.01 96400F6000     \xf1\xa01.01',
+      b'\xf1\x00YG__ SCC F_CUP   1.01 1.02 96400F6000     \xf1\xa01.02',
+      b'\xf1\x00YG__ SCC F_CUP   1.00 1.01 99110F6000     \xf1\xa01.01',
+    ],
+    (Ecu.abs, 0x7d1, None): [
+      b'\xf1\x8758920-F6230\xf1\000NC MGH \t 101\031\t\005 58920F6230\xf1\xa01.01',
+    ],
+    (Ecu.eps, 0x7d4, None): [
+      b'\xf1\x00YG  MDPS C 1.00 1.00 99800F6563\x00 4YGAC100',
+      b'\xf1\x00YG  MDPS C 1.00 1.00 E0000F6563\x00 4YGSC100',
+      b'\xf1\x00YG  MDPS C 1.01 99500F6563\x00 4YGDC103',
+      b'\xf1\x00YG  MDPS C 1.00 1.01 56310F6350\x00 4YG7C101',
+      b'\xf1\x00YG  MDPS C 1.00 1.01 99600G8563\x00 41G8C101',
     ],
   },
   CAR.KIA_K5_2021: {
