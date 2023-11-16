@@ -121,7 +121,7 @@ class CAR(StrEnum):
   KIA_FORTE_2021_NON_SCC = "KIA FORTE LXS 2021 NON-SCC"
   KIA_K5_2021 = "KIA K5 2021"
   KIA_K5_HEV_2020 = "KIA K5 HYBRID 2020"
-  K7_YG = "KIA K7 (YG)"
+  KIA_CADENZA_YG_2018 = "KIA CADENZA YG 2018"
   KIA_K8_HEV_1ST_GEN = "KIA K8 HYBRID 1ST GEN"
   KIA_NIRO_EV = "KIA NIRO EV 2020"
   KIA_NIRO_EV_2ND_GEN = "KIA NIRO EV 2ND GEN"
@@ -247,6 +247,7 @@ CAR_INFO: Dict[str, Optional[Union[HyundaiCarInfo, List[HyundaiCarInfo]]]] = {
     HyundaiCarInfo("Kia Forte 2023", car_parts=CarParts.common([CarHarness.hyundai_e])),
   ],
   CAR.KIA_K5_2021: HyundaiCarInfo("Kia K5 2021-24", car_parts=CarParts.common([CarHarness.hyundai_a])),
+  CAR.KIA_CADENZA_YG_2018: HyundaiCarInfo("Kia Cadenza YG 2018", car_parts=CarParts.common([CarHarness.hyundai_c])),
   CAR.KIA_K5_HEV_2020: HyundaiCarInfo("Kia K5 Hybrid 2020-22", car_parts=CarParts.common([CarHarness.hyundai_a])),
   CAR.KIA_K8_HEV_1ST_GEN: HyundaiCarInfo("Kia K8 Hybrid (with HDA II) 2023", "Highway Driving Assist II", car_parts=CarParts.common([CarHarness.hyundai_q])),
   CAR.KIA_NIRO_EV: [
@@ -386,6 +387,9 @@ FINGERPRINTS = {
   }],
   CAR.KONA_EV_2022: [{
     127: 8, 304: 8, 320: 8, 339: 8, 352: 8, 356: 4, 544: 8, 593: 8, 688: 5, 832: 8, 881: 8, 882: 8, 897: 8, 902: 8, 903: 8, 905: 8, 909: 8, 913: 8, 916: 8, 1040: 8, 1042: 8, 1056: 8, 1057: 8, 1069: 8, 1078: 4, 1136: 8, 1145: 8, 1151: 8, 1155: 8, 1156: 8, 1157: 4, 1162: 8, 1164: 8, 1168: 8, 1173: 8, 1183: 8, 1188: 8, 1191: 2, 1193: 8, 1225: 8, 1227: 8, 1265: 4, 1280: 1, 1287: 4, 1290: 8, 1291: 8, 1292: 8, 1294: 8, 1312: 8, 1322: 8, 1339: 8, 1342: 8, 1343: 8, 1345: 8, 1348: 8, 1355: 8, 1363: 8, 1369: 8, 1379: 8, 1407: 8, 1419: 8, 1426: 8, 1427: 6, 1429: 8, 1430: 8, 1446: 8, 1456: 4, 1470: 8, 1473: 8, 1485: 8, 1507: 8, 1535: 8, 1990: 8, 1998: 8
+  }],
+  CAR.KIA_CADENZA_YG_2018: [{
+    67: 8, 68: 8, 127: 8, 304: 8, 320: 8, 339: 8, 356: 4, 544: 8, 546: 8, 593: 8, 608: 8, 688: 5, 809: 8, 832: 8, 854: 7, 870: 7, 871: 8, 872: 8, 897: 8, 902: 8, 903: 8, 916: 8, 1040: 8, 1056: 8, 1057: 8, 1078: 4, 1107: 5, 1136: 8, 1151: 6, 1156: 8, 1157: 4, 1162: 4, 1168: 7, 1170: 8, 1173: 8, 1265: 4, 1280: 1, 1287: 4, 1290: 8, 1292: 8, 1294: 8, 1312: 8, 1322: 8, 1342: 6, 1345: 8, 1348: 8, 1363: 8, 1369: 8, 1371: 8, 1378: 4, 1384: 8, 1407: 8, 1419: 8, 1427: 6, 1444: 8, 1456: 4, 1470: 8
   }],
   CAR.KIA_NIRO_EV: [{
     127: 8, 304: 8, 320: 8, 339: 8, 352: 8, 356: 4, 516: 8, 544: 8, 593: 8, 688: 5, 832: 8, 881: 8, 882: 8, 897: 8, 902: 8, 903: 8, 905: 8, 909: 8, 916: 8, 1040: 8, 1042: 8, 1056: 8, 1057: 8, 1078: 4, 1136: 8, 1151: 6, 1156: 8, 1157: 4, 1168: 7, 1173: 8, 1183: 8, 1186: 2, 1191: 2, 1193: 8, 1225: 8, 1260: 8, 1265: 4, 1280: 1, 1287: 4, 1290: 8, 1291: 8, 1292: 8, 1294: 8, 1312: 8, 1322: 8, 1342: 6, 1345: 8, 1348: 8, 1355: 8, 1363: 8, 1369: 8, 1407: 8, 1419: 8, 1426: 8, 1427: 6, 1429: 8, 1430: 8, 1456: 4, 1470: 8, 1473: 8, 1507: 8, 1535: 8, 1990: 8, 1998: 8, 1996: 8, 2000: 8, 2004: 8, 2008: 8, 2012: 8, 2015: 8
@@ -1424,8 +1428,27 @@ FW_VERSIONS = {
       b'\xf1\x816U2V7051\000\000\xf1\0006U2V0_C2\000\0006U2V7051\000\000DCD0T14US1\000\000\000\000',
       b'\xf1\x816U2V7051\x00\x00\xf1\x006U2V0_C2\x00\x006U2V7051\x00\x00DCD0T14US1U\x867Z',
     ],
-    (Ecu.abs, 0x7D1, None): [b'\xf1\000CD ESC \003 102\030\b\005 58920-J7350', ],
+    (Ecu.abs, 0x7D1, None): [b'\xf1\000CD ESC \003 102\030\b\005 58920-
   },
+  CAR.KIA_CADENZA_YG_2018: {
+    (Ecu.fwdCamera, 0x7c4, None): [
+      b'\xf1\000YG MFC  1.00 1.01 95740F6100 170717',
+      b'\xf1\000YG MFC  1.00 1.03 95740F6200 190605',
+    ],
+    (Ecu.fwdRadar, 0x7d0, None): [
+      b'\xf1\x00YG__ SCC F_CUP   1.01 1.01 96400F6000     \xf1\xa01.01',
+      b'\xf1\x00YG__ SCC F_CUP   1.01 1.02 96400F6000     \xf1\xa01.02',
+      b'\xf1\x00YG__ SCC F_CUP   1.00 1.01 99110F6000     \xf1\xa01.01',
+    ],
+    (Ecu.abs, 0x7d1, None): [
+      b'\xf1\x8758920-F6230\xf1\000NC MGH \t 101\031\t\005 58920F6230\xf1\xa01.01',
+    ],
+    (Ecu.eps, 0x7d4, None): [
+      b'\xf1\000YG  MDPS C 1.00 1.00 99800F6563\000 4YGAC100',
+      b'\xf1\000YG  MDPS C 1.00 1.00 E0000F6563\000 4YGSC100',
+      b'\xf1\000YG  MDPS C 1.01 99500F6563\000 4YGDC103',
+      b'\xf1\000YG  MDPS C 1.00 1.01 56310F6350\000 4YG7C101',
+    ],
   CAR.KIA_FORTE: {
     (Ecu.eps, 0x7D4, None): [
       b'\xf1\x00BD  MDPS C 1.00 1.02 56310-XX000 4BD2C102',
@@ -2223,7 +2246,7 @@ CHECKSUM = {
 
 CAN_GEARS = {
   # which message has the gear. hybrid and EV use ELECT_GEAR
-  "use_cluster_gears": {CAR.ELANTRA, CAR.ELANTRA_GT_I30, CAR.KONA, CAR.K7_YG},
+  "use_cluster_gears": {CAR.ELANTRA, CAR.ELANTRA_GT_I30, CAR.KONA, CAR.KIA_CADENZA_YG_2018},
   "use_tcu_gears": {CAR.KIA_OPTIMA_G4, CAR.KIA_OPTIMA_G4_FL, CAR.SONATA_LF, CAR.VELOSTER, CAR.TUCSON},
 }
 
@@ -2254,7 +2277,7 @@ EV_CAR = {CAR.IONIQ_EV_2020, CAR.IONIQ_EV_LTD, CAR.KONA_EV, CAR.KIA_NIRO_EV, CAR
           CAR.KIA_EV6, CAR.IONIQ_5, CAR.IONIQ_6, CAR.GENESIS_GV60_EV_1ST_GEN, CAR.KONA_EV_2ND_GEN}
 
 # these cars require a special panda safety mode due to missing counters and checksums in the messages
-LEGACY_SAFETY_MODE_CAR = {CAR.HYUNDAI_GENESIS, CAR.IONIQ_EV_LTD, CAR.KIA_OPTIMA_G4,
+LEGACY_SAFETY_MODE_CAR = {CAR.HYUNDAI_GENESIS, CAR.IONIQ_EV_LTD, CAR.KIA_CADENZA_YG_2018, CAR.KIA_OPTIMA_G4,
                           CAR.VELOSTER, CAR.GENESIS_G70, CAR.GENESIS_G80, CAR.KIA_CEED, CAR.ELANTRA, CAR.IONIQ_HEV_2022,
                           CAR.KIA_OPTIMA_H, CAR.ELANTRA_GT_I30,}
 
@@ -2305,7 +2328,7 @@ DBC = {
   CAR.KIA_SELTOS_2023_NON_SCC: dbc_dict('hyundai_kia_generic', None),
   CAR.KIA_SORENTO: dbc_dict('hyundai_kia_generic', None), # Has 0x5XX messages, but different format
   CAR.KIA_STINGER: dbc_dict('hyundai_kia_generic', None),
-  CAR.K7_YG: dbc_dict('hyundai_kia_generic', None),
+  CAR.KIA_CADENZA_YG_2018: dbc_dict('hyundai_kia_generic', None),
   CAR.KIA_STINGER_2022: dbc_dict('hyundai_kia_generic', None),
   CAR.KONA: dbc_dict('hyundai_kia_generic', None),
   CAR.KONA_NON_SCC: dbc_dict('hyundai_kia_generic', None),
