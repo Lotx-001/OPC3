@@ -203,9 +203,10 @@ class CarInterface(CarInterfaceBase):
       ret.steerRatio = 13.75
       ret.tireStiffnessFactor = 0.5
     elif candidate == CAR.K7:
-      ret.mass = 1685.
+      ret.mass = 1685. * CV.LB_TO_KG
       ret.wheelbase = 2.85
       ret.steerRatio = 14.4 * 1.15
+      ret.tireStiffnessFactor = 0.8
     elif candidate in (CAR.KIA_K5_2021, CAR.KIA_K5_HEV_2020):
       ret.mass = 3381. * CV.LB_TO_KG
       ret.wheelbase = 2.85
