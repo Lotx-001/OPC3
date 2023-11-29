@@ -74,7 +74,7 @@ class CarInterface(CarInterfaceBase):
     if candidate in (CAR.AZERA_6TH_GEN, CAR.AZERA_HEV_6TH_GEN):
       ret.mass = 1600. if candidate == CAR.AZERA_6TH_GEN else 1675.  # ICE is ~average of 2.5L and 3.5L
       ret.wheelbase = 2.885
-      ret.steerRatio = 14.4/1 * 2.71
+      ret.steerRatio = 14.4 * 2.71
     elif candidate in (CAR.SANTA_FE, CAR.SANTA_FE_2022, CAR.SANTA_FE_HEV_2022, CAR.SANTA_FE_PHEV_2022):
       ret.mass = 3982. * CV.LB_TO_KG
       ret.wheelbase = 2.766
